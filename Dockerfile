@@ -8,7 +8,9 @@ RUN npm install
 
 COPY . .
 
-EXPOSE 80
+ENV PORT 80
+
+EXPOSE $PORT
 
 #VOLUME ["feedback:/app/feedback", "\"C:\Users\misla\Documents\Udemy\Docker\DockerVolumes:/app\"", "/app/node_modules" ]
 
